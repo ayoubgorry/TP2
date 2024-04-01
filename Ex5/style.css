@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(42, 81, 194);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    margin: 3% auto;
+    height: 530px;
+}
+
+.image-box, .login-box {
+    flex: 1;
+}
+
+.image-box {
+    background: url("IMG_1443.JPG") center/cover no-repeat;
+    border-radius: 4% 0 0 4%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius:0 4% 4% 0;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    background-color: rgb(46, 89, 217);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.login-btn:hover {
+    opacity: 1;
+}
+
+hr {
+    margin: 35px 0;
+    border: none;
+    height: 1px;
+    background-color: rgb(213, 228, 218);
+}
+
+.links a {
+    color: rgb(42, 81, 194);
+    text-decoration: none;
+    display: block;
+}
+
+p {
+    color: rgb(147, 158, 150);
+    text-align: center;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+    }
+
+    .image-box {
+        height: 250px;
+        border-radius: 4% 4% 0 0;
+    }
+
+    .login-box {
+        border-radius: 0 0 4% 4%;
+    }
+}
